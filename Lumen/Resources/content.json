@@ -1,0 +1,1772 @@
+{
+ "version": 1,
+ "translations": [
+  {
+   "id": "KJV",
+   "name": "King James Version",
+   "language": "en",
+   "license": "publicDomain"
+  },
+  {
+   "id": "WEB",
+   "name": "World English Bible",
+   "language": "en",
+   "license": "publicDomain"
+  },
+  {
+   "id": "RV1909",
+   "name": "Reina-Valera 1909",
+   "language": "es",
+   "license": "publicDomain"
+  }
+ ],
+ "journeys": [
+  {
+   "id": "psalms_anxiety",
+   "asset": "journey_psalms",
+   "terrain": "pasture",
+   "seeded": true,
+   "title": {
+    "en": "Psalms for Anxious Days",
+    "es": "Salmos para días de ansiedad"
+   },
+   "subtitle": {
+    "en": "Seven days in the Psalms",
+    "es": "Siete días en los Salmos"
+   },
+   "books": [
+    "PSA"
+   ],
+   "totalDays": 7,
+   "days": [
+    {
+     "day": 1,
+     "title": {
+      "en": "The Shepherd",
+      "es": "El Pastor"
+     },
+     "summary": {
+      "en": "Psalm 23",
+      "es": "Salmo 23"
+     },
+     "keyCard": 0,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 1,
+        "verseEnd": 1
+       },
+       "scene": "scene_meadow_day_01",
+       "text": {
+        "KJV": "The Lord is my shepherd; I shall not want.",
+        "WEB": "Yahweh is my shepherd: I shall lack nothing.",
+        "RV1909": "Jehová es mi pastor; nada me faltará."
+       },
+       "explain": {
+        "en": "David says God looks after him the way a shepherd looks after a sheep, so he trusts he will not lack what he truly needs.",
+        "es": "David dice que Dios lo cuida como un pastor cuida a su oveja, y por eso confía en que no le faltará lo que de verdad necesita."
+       },
+       "context": {
+        "en": "David was a shepherd before he was a king. He knew a flock depends on its shepherd for food, water and safety.",
+        "es": "David fue pastor antes de ser rey. Sabía que un rebaño depende de su pastor para comer, beber y estar a salvo."
+       },
+       "apply": {
+        "en": "Tell God plainly one thing you need today.",
+        "es": "Dile a Dios con sencillez una cosa que necesitas hoy."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 2,
+        "verseEnd": 2
+       },
+       "scene": "scene_still_water_01",
+       "text": {
+        "KJV": "He maketh me to lie down in green pastures: he leadeth me beside the still waters.",
+        "WEB": "He makes me lie down in green pastures. He leads me beside still waters.",
+        "RV1909": "En lugares de delicados pastos me hará yacer: junto á aguas de reposo me pastoreará."
+       },
+       "explain": {
+        "en": "The shepherd leads the sheep to places where it can eat and rest without fear.",
+        "es": "El pastor lleva a la oveja a lugares donde puede comer y descansar sin miedo."
+       },
+       "context": {
+        "en": "In the dry hills of Judea, green grass and calm water were rare. A good shepherd had to know where to find them.",
+        "es": "En las colinas secas de Judea, el pasto verde y el agua tranquila eran escasos. Un buen pastor debía saber dónde encontrarlos."
+       },
+       "apply": {
+        "en": "Take one unhurried minute today with your phone face down.",
+        "es": "Regálate hoy un minuto sin prisa, con el teléfono boca abajo."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 3,
+        "verseEnd": 3
+       },
+       "scene": "scene_meadow_path_01",
+       "text": {
+        "KJV": "He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.",
+        "WEB": "He restores my soul. He guides me in the paths of righteousness for his name’s sake.",
+        "RV1909": "Confortará mi alma; guiaráme por sendas de justicia por amor de su nombre."
+       },
+       "explain": {
+        "en": "God renews the psalmist's inner life and guides him along good paths, because that is who God is.",
+        "es": "Dios renueva la vida interior del salmista y lo guía por buenos caminos, porque así es Dios."
+       },
+       "context": {
+        "en": "\"For his name's sake\" means the guidance rests on God's own character, not on how well the sheep performs.",
+        "es": "\"Por amor de su nombre\" significa que la guía descansa en el carácter de Dios, no en lo bien que lo haga la oveja."
+       },
+       "apply": {
+        "en": "Ask for guidance on one decision in front of you.",
+        "es": "Pide guía para una decisión que tienes por delante."
+       }
+      },
+      {
+       "type": "missingWord",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 1,
+        "verseEnd": 1
+       },
+       "blanks": {
+        "KJV": {
+         "prompt": "The Lord is my _____; I shall not want.",
+         "answer": "shepherd",
+         "options": [
+          "judge",
+          "king",
+          "shepherd",
+          "teacher"
+         ]
+        },
+        "WEB": {
+         "prompt": "Yahweh is my _____: I shall lack nothing.",
+         "answer": "shepherd",
+         "options": [
+          "judge",
+          "king",
+          "shepherd",
+          "teacher"
+         ]
+        },
+        "RV1909": {
+         "prompt": "Jehová es mi _____; nada me faltará.",
+         "answer": "pastor",
+         "options": [
+          "juez",
+          "maestro",
+          "pastor",
+          "rey"
+         ]
+        }
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 4,
+        "verseEnd": 4
+       },
+       "scene": "scene_valley_dusk_01",
+       "text": {
+        "KJV": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.",
+        "WEB": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me. Your rod and your staff, they comfort me.",
+        "RV1909": "Aunque ande en valle de sombra de muerte, no temeré mal alguno; porque tú estarás conmigo: tu vara y tu cayado me infundirán aliento."
+       },
+       "explain": {
+        "en": "Even in the darkest place the psalmist is not alone. The shepherd's presence is what takes away the fear.",
+        "es": "Aun en el lugar más oscuro el salmista no está solo. La presencia del pastor es lo que quita el temor."
+       },
+       "context": {
+        "en": "Shepherds carried a rod to protect the flock and a staff to guide it. Both were signs that the shepherd was close.",
+        "es": "Los pastores llevaban una vara para proteger al rebaño y un cayado para guiarlo. Ambos eran señal de que el pastor estaba cerca."
+       },
+       "apply": {
+        "en": "Notice the psalm changes here from \"he\" to \"you\". Try speaking to God directly today.",
+        "es": "Fíjate que aquí el salmo pasa de \"él\" a \"tú\". Prueba hoy hablarle a Dios directamente."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "scene": "scene_table_evening_01",
+       "text": {
+        "KJV": "Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.",
+        "WEB": "You prepare a table before me in the presence of my enemies. You anoint my head with oil. My cup runs over.",
+        "RV1909": "Aderezarás mesa delante de mí, en presencia de mis angustiadores: ungiste mi cabeza con aceite: mi copa está rebosando."
+       },
+       "explain": {
+        "en": "The picture changes from a shepherd to a generous host who welcomes, honors and provides more than enough.",
+        "es": "La imagen cambia de un pastor a un anfitrión generoso que recibe, honra y da más que suficiente."
+       },
+       "context": {
+        "en": "Anointing a guest's head with oil was a gesture of welcome and honor in the ancient Near East.",
+        "es": "Ungir con aceite la cabeza de un invitado era un gesto de bienvenida y honor en el antiguo Cercano Oriente."
+       },
+       "apply": {
+        "en": "Write down one good thing you received this week.",
+        "es": "Anota una cosa buena que recibiste esta semana."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 6,
+        "verseEnd": 6
+       },
+       "scene": "scene_meadow_golden_01",
+       "text": {
+        "KJV": "Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the Lord for ever.",
+        "WEB": "Surely goodness and loving kindness shall follow me all the days of my life, and I will dwell in Yahweh’s house forever.",
+        "RV1909": "Ciertamente el bien y la misericordia me seguirán todos los días de mi vida: y en la casa de Jehová moraré por largos días."
+       },
+       "explain": {
+        "en": "The psalm ends with confidence: goodness and mercy stay with him, and his home is with God.",
+        "es": "El salmo termina con confianza: el bien y la misericordia lo acompañan, y su hogar está con Dios."
+       },
+       "context": {
+        "en": "The Hebrew word for \"follow\" is a strong one. It can also be translated \"pursue\".",
+        "es": "La palabra hebrea para \"seguir\" es fuerte. También puede traducirse \"perseguir\"."
+       },
+       "apply": {
+        "en": "Read the whole psalm aloud once, slowly.",
+        "es": "Lee el salmo completo en voz alta una vez, despacio."
+       }
+      },
+      {
+       "type": "order",
+       "ref": {
+        "book": "PSA",
+        "chapter": 23,
+        "verseStart": 1,
+        "verseEnd": 3
+       },
+       "pieces": [
+        {
+         "KJV": "The Lord is my shepherd; I shall not want.",
+         "WEB": "Yahweh is my shepherd: I shall lack nothing.",
+         "RV1909": "Jehová es mi pastor; nada me faltará."
+        },
+        {
+         "KJV": "He maketh me to lie down in green pastures: he leadeth me beside the still waters.",
+         "WEB": "He makes me lie down in green pastures. He leads me beside still waters.",
+         "RV1909": "En lugares de delicados pastos me hará yacer: junto á aguas de reposo me pastoreará."
+        },
+        {
+         "KJV": "He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.",
+         "WEB": "He restores my soul. He guides me in the paths of righteousness for his name’s sake.",
+         "RV1909": "Confortará mi alma; guiaráme por sendas de justicia por amor de su nombre."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "day": 2,
+     "title": {
+      "en": "Be still",
+      "es": "Estad quietos"
+     },
+     "summary": {
+      "en": "Psalm 46",
+      "es": "Salmo 46"
+     },
+     "keyCard": 5,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 1,
+        "verseEnd": 1
+       },
+       "scene": "scene_sea_mist_01",
+       "text": {
+        "KJV": "God is our refuge and strength, a very present help in trouble.",
+        "WEB": "God is our refuge and strength, a very present help in trouble.",
+        "RV1909": "Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones."
+       },
+       "explain": {
+        "en": "God is described as a safe place and a source of strength, close at hand when trouble comes.",
+        "es": "Se describe a Dios como un lugar seguro y una fuente de fuerza, cercano cuando llega la angustia."
+       },
+       "context": {
+        "en": "A refuge was a fortified place where people ran for safety when an enemy approached.",
+        "es": "Un refugio era un lugar fortificado al que la gente corría para ponerse a salvo cuando se acercaba un enemigo."
+       },
+       "apply": {
+        "en": "When worry rises today, repeat this verse once before doing anything else.",
+        "es": "Cuando hoy suba la preocupación, repite este versículo una vez antes de hacer otra cosa."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 2,
+        "verseEnd": 2
+       },
+       "scene": "scene_sea_storm_01",
+       "text": {
+        "KJV": "Therefore will not we fear, though the earth be removed, and though the mountains be carried into the midst of the sea;",
+        "WEB": "Therefore we won’t be afraid, though the earth changes, though the mountains are shaken into the heart of the seas;",
+        "RV1909": "Por tanto no temeremos aunque la tierra sea removida; aunque se traspasen los montes al corazón de la mar."
+       },
+       "explain": {
+        "en": "Because God is a refuge, the psalmist chooses not to fear even if the most solid things give way.",
+        "es": "Porque Dios es refugio, el salmista decide no temer aunque cedan las cosas más firmes."
+       },
+       "context": {
+        "en": "Mountains were the ancient picture of what never moves. The sea was the picture of chaos.",
+        "es": "Los montes eran la imagen antigua de lo que nunca se mueve. El mar era la imagen del caos."
+       },
+       "apply": {
+        "en": "Name the thing that feels like it is shaking. Saying it is a first step.",
+        "es": "Ponle nombre a eso que sientes que tiembla. Decirlo es un primer paso."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "scene": "scene_city_dawn_01",
+       "text": {
+        "KJV": "God is in the midst of her; she shall not be moved: God shall help her, and that right early.",
+        "WEB": "God is within her. She shall not be moved. God will help her at dawn.",
+        "RV1909": "Dios está en medio de ella; no será conmovida: Dios la ayudará al clarear la mañana."
+       },
+       "explain": {
+        "en": "God is present among his people, so they are held steady. Help comes as surely as morning.",
+        "es": "Dios está en medio de su pueblo, por eso se mantiene firme. La ayuda llega tan cierta como la mañana."
+       },
+       "context": {
+        "en": "\"She\" is the city of God, Jerusalem. Dawn was when a besieged city learned whether it had survived the night.",
+        "es": "Se refiere a la ciudad de Dios, Jerusalén. Al amanecer una ciudad sitiada sabía si había sobrevivido a la noche."
+       },
+       "apply": {
+        "en": "Tomorrow morning, read one verse before opening any other app.",
+        "es": "Mañana por la mañana, lee un versículo antes de abrir cualquier otra aplicación."
+       }
+      },
+      {
+       "type": "choice",
+       "question": {
+        "en": "In Psalm 46, what does the writer call God?",
+        "es": "En el Salmo 46, ¿cómo llama el escritor a Dios?"
+       },
+       "options": [
+        {
+         "en": "A refuge and strength",
+         "es": "Amparo y fortaleza"
+        },
+        {
+         "en": "A distant king",
+         "es": "Un rey lejano"
+        },
+        {
+         "en": "A storm on the sea",
+         "es": "Una tormenta en el mar"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Verse 1 opens the psalm with this image.",
+        "es": "El versículo 1 abre el salmo con esta imagen."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 7,
+        "verseEnd": 7
+       },
+       "scene": "scene_hills_morning_01",
+       "text": {
+        "KJV": "The Lord of hosts is with us; the God of Jacob is our refuge. Selah.",
+        "WEB": "Yahweh of Armies is with us. The God of Jacob is our refuge.",
+        "RV1909": "Jehová de los ejércitos es con nosotros; nuestro refugio es el Dios de Jacob. (Selah.)"
+       },
+       "explain": {
+        "en": "This line is the chorus of the psalm: the Lord of all is with us and is our place of safety.",
+        "es": "Esta línea es el estribillo del salmo: el Señor de todo está con nosotros y es nuestro lugar seguro."
+       },
+       "context": {
+        "en": "\"God of Jacob\" recalls a man with a troubled story whom God did not abandon.",
+        "es": "\"Dios de Jacob\" recuerda a un hombre con una historia difícil a quien Dios no abandonó."
+       },
+       "apply": {
+        "en": "Say the words \"with us\" slowly. Let that be today's short prayer.",
+        "es": "Di despacio las palabras \"con nosotros\". Que esa sea tu breve oración de hoy."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 10,
+        "verseEnd": 10
+       },
+       "scene": "scene_still_water_01",
+       "text": {
+        "KJV": "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.",
+        "WEB": "“Be still, and know that I am God. I will be exalted among the nations. I will be exalted in the earth.”",
+        "RV1909": "Estad quietos, y conoced que yo soy Dios: ensalzado he de ser entre las gentes, ensalzado seré en la tierra."
+       },
+       "explain": {
+        "en": "God calls people to stop striving and to recognize who he is.",
+        "es": "Dios llama a dejar de luchar y a reconocer quién es él."
+       },
+       "context": {
+        "en": "The Hebrew verb can mean \"let go\" or \"cease\". It was first spoken into a scene of war and noise.",
+        "es": "El verbo hebreo puede significar \"soltar\" o \"cesar\". Se dijo primero en medio de una escena de guerra y ruido."
+       },
+       "apply": {
+        "en": "Sit for sixty seconds in silence. No music, no screen.",
+        "es": "Quédate sesenta segundos en silencio. Sin música, sin pantalla."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 11,
+        "verseEnd": 11
+       },
+       "scene": "scene_meadow_day_01",
+       "text": {
+        "KJV": "The Lord of hosts is with us; the God of Jacob is our refuge. Selah.",
+        "WEB": "Yahweh of Armies is with us. The God of Jacob is our refuge.",
+        "RV1909": "Jehová de los ejércitos es con nosotros; nuestro refugio es el Dios de Jacob. (Selah.)"
+       },
+       "explain": {
+        "en": "The psalm closes by repeating its chorus, so the reader leaves with this truth in mind.",
+        "es": "El salmo cierra repitiendo su estribillo, para que el lector se quede con esta verdad."
+       },
+       "context": {
+        "en": "\"Selah\" probably marked a pause in the music, a moment to stop and think.",
+        "es": "\"Selah\" probablemente marcaba una pausa en la música, un momento para detenerse y pensar."
+       },
+       "apply": {
+        "en": "Choose one line from today to carry with you.",
+        "es": "Elige una línea de hoy para llevar contigo."
+       }
+      },
+      {
+       "type": "missingWord",
+       "ref": {
+        "book": "PSA",
+        "chapter": 46,
+        "verseStart": 10,
+        "verseEnd": 10
+       },
+       "blanks": {
+        "KJV": {
+         "prompt": "Be _____, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.",
+         "answer": "still",
+         "options": [
+          "loud",
+          "ready",
+          "still",
+          "strong"
+         ]
+        },
+        "WEB": {
+         "prompt": "“Be _____, and know that I am God. I will be exalted among the nations. I will be exalted in the earth.”",
+         "answer": "still",
+         "options": [
+          "loud",
+          "ready",
+          "still",
+          "strong"
+         ]
+        },
+        "RV1909": {
+         "prompt": "Estad _____, y conoced que yo soy Dios: ensalzado he de ser entre las gentes, ensalzado seré en la tierra.",
+         "answer": "quietos",
+         "options": [
+          "alegres",
+          "fuertes",
+          "listos",
+          "quietos"
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "day": 3,
+     "title": {
+      "en": "Where help comes from",
+      "es": "De dónde viene el socorro"
+     },
+     "summary": {
+      "en": "Psalm 121",
+      "es": "Salmo 121"
+     },
+     "keyCard": 1,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 1,
+        "verseEnd": 1
+       },
+       "scene": "scene_hills_morning_01",
+       "text": {
+        "KJV": "I will lift up mine eyes unto the hills, from whence cometh my help.",
+        "WEB": "I will lift up my eyes to the hills. Where does my help come from?",
+        "RV1909": "Alzaré mis ojos á los montes, de donde vendrá mi socorro."
+       },
+       "explain": {
+        "en": "The traveler looks at the hills ahead and asks where help will come from.",
+        "es": "El viajero mira los montes que tiene delante y pregunta de dónde vendrá su socorro."
+       },
+       "context": {
+        "en": "This is a pilgrim song, sung on the road up to Jerusalem. The hills could hide danger.",
+        "es": "Es un cántico de peregrinos, cantado en el camino de subida a Jerusalén. Los montes podían esconder peligros."
+       },
+       "apply": {
+        "en": "It is fine to begin with a question. Bring yours.",
+        "es": "Está bien empezar con una pregunta. Trae la tuya."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 2,
+        "verseEnd": 2
+       },
+       "scene": "scene_meadow_day_01",
+       "text": {
+        "KJV": "My help cometh from the Lord, which made heaven and earth.",
+        "WEB": "My help comes from Yahweh, who made heaven and earth.",
+        "RV1909": "Mi socorro viene de Jehová, que hizo los cielos y la tierra."
+       },
+       "explain": {
+        "en": "The answer: help comes from the Lord, the one who made everything.",
+        "es": "La respuesta: el socorro viene del Señor, el que hizo todas las cosas."
+       },
+       "context": {
+        "en": "Calling God the maker of heaven and earth sets him above every hill and everything on it.",
+        "es": "Llamar a Dios hacedor de los cielos y la tierra lo pone por encima de cada monte y de todo lo que hay en él."
+       },
+       "apply": {
+        "en": "Look at the sky for a moment today and remember who made it.",
+        "es": "Mira hoy un momento el cielo y recuerda quién lo hizo."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 3,
+        "verseEnd": 3
+       },
+       "scene": "scene_meadow_path_01",
+       "text": {
+        "KJV": "He will not suffer thy foot to be moved: he that keepeth thee will not slumber.",
+        "WEB": "He will not allow your foot to be moved. He who keeps you will not slumber.",
+        "RV1909": "No dará tu pie al resbaladero; ni se dormirá el que te guarda."
+       },
+       "explain": {
+        "en": "God steadies the traveler's steps and stays attentive the whole way.",
+        "es": "Dios afirma los pasos del viajero y permanece atento todo el camino."
+       },
+       "context": {
+        "en": "Mountain paths were steep and loose. One slip could end a journey.",
+        "es": "Los senderos de montaña eran empinados y sueltos. Un resbalón podía terminar el viaje."
+       },
+       "apply": {
+        "en": "Think of one step you are nervous to take, and ask for steadiness.",
+        "es": "Piensa en un paso que te pone nervioso dar, y pide firmeza."
+       }
+      },
+      {
+       "type": "order",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 1,
+        "verseEnd": 3
+       },
+       "pieces": [
+        {
+         "KJV": "I will lift up mine eyes unto the hills, from whence cometh my help.",
+         "WEB": "I will lift up my eyes to the hills. Where does my help come from?",
+         "RV1909": "Alzaré mis ojos á los montes, de donde vendrá mi socorro."
+        },
+        {
+         "KJV": "My help cometh from the Lord, which made heaven and earth.",
+         "WEB": "My help comes from Yahweh, who made heaven and earth.",
+         "RV1909": "Mi socorro viene de Jehová, que hizo los cielos y la tierra."
+        },
+        {
+         "KJV": "He will not suffer thy foot to be moved: he that keepeth thee will not slumber.",
+         "WEB": "He will not allow your foot to be moved. He who keeps you will not slumber.",
+         "RV1909": "No dará tu pie al resbaladero; ni se dormirá el que te guarda."
+        }
+       ]
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 4,
+        "verseEnd": 4
+       },
+       "scene": "scene_night_stars_01",
+       "text": {
+        "KJV": "Behold, he that keepeth Israel shall neither slumber nor sleep.",
+        "WEB": "Behold, he who keeps Israel will neither slumber nor sleep.",
+        "RV1909": "He aquí, no se adormecerá ni dormirá el que guarda á Israel."
+       },
+       "explain": {
+        "en": "The one who watches over his people never drifts off.",
+        "es": "El que guarda a su pueblo nunca se duerme."
+       },
+       "context": {
+        "en": "Travelers took turns keeping watch at night. The psalm says God needs no one to relieve him.",
+        "es": "Los viajeros se turnaban para vigilar de noche. El salmo dice que Dios no necesita relevo."
+       },
+       "apply": {
+        "en": "Tonight, let this verse be the last thing you read.",
+        "es": "Esta noche, que este versículo sea lo último que leas."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "scene": "scene_tree_shade_01",
+       "text": {
+        "KJV": "The Lord is thy keeper: the Lord is thy shade upon thy right hand.",
+        "WEB": "Yahweh is your keeper. Yahweh is your shade on your right hand.",
+        "RV1909": "Jehová es tu guardador: Jehová es tu sombra á tu mano derecha."
+       },
+       "explain": {
+        "en": "God is pictured as a keeper standing close enough to cast shade.",
+        "es": "Se describe a Dios como un guardador tan cercano que da sombra."
+       },
+       "context": {
+        "en": "Under a desert sun, shade could be the difference between going on and collapsing.",
+        "es": "Bajo el sol del desierto, la sombra podía ser la diferencia entre seguir o desfallecer."
+       },
+       "apply": {
+        "en": "Where do you need shade today? Ask for it.",
+        "es": "¿Dónde necesitas sombra hoy? Pídela."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 121,
+        "verseStart": 7,
+        "verseEnd": 8
+       },
+       "scene": "scene_meadow_golden_01",
+       "text": {
+        "KJV": "The Lord shall preserve thee from all evil: he shall preserve thy soul. The Lord shall preserve thy going out and thy coming in from this time forth, and even for evermore.",
+        "WEB": "Yahweh will keep you from all evil. He will keep your soul. Yahweh will keep your going out and your coming in, from this time forward, and forever more.",
+        "RV1909": "Jehová te guardará de todo mal: él guardará tu alma. Jehová guardará tu salida y tu entrada, desde ahora y para siempre."
+       },
+       "explain": {
+        "en": "The psalm ends with a wide promise of God's keeping over every departure and return.",
+        "es": "El salmo termina con una amplia promesa del cuidado de Dios sobre cada salida y cada regreso."
+       },
+       "context": {
+        "en": "\"Going out and coming in\" was a Hebrew way of saying all of daily life.",
+        "es": "\"Salida y entrada\" era una forma hebrea de decir toda la vida diaria."
+       },
+       "apply": {
+        "en": "As you walk out the door today, recall this line.",
+        "es": "Al salir hoy por la puerta, recuerda esta línea."
+       }
+      },
+      {
+       "type": "choice",
+       "question": {
+        "en": "According to Psalm 121, what does the keeper of Israel never do?",
+        "es": "Según el Salmo 121, ¿qué no hace nunca el que guarda a Israel?"
+       },
+       "options": [
+        {
+         "en": "Travel",
+         "es": "Viajar"
+        },
+        {
+         "en": "Slumber or sleep",
+         "es": "Adormecerse ni dormir"
+        },
+        {
+         "en": "Speak",
+         "es": "Hablar"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "See verse 4.",
+        "es": "Mira el versículo 4."
+       }
+      }
+     ]
+    },
+    {
+     "day": 4,
+     "title": {
+      "en": "When I am afraid",
+      "es": "En el día que temo"
+     },
+     "summary": {
+      "en": "Psalms 55, 56, 61, 62",
+      "es": "Salmos 55, 56, 61, 62"
+     },
+     "keyCard": 0,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 56,
+        "verseStart": 3,
+        "verseEnd": 3
+       },
+       "scene": "scene_valley_dusk_01",
+       "text": {
+        "KJV": "What time I am afraid, I will trust in thee.",
+        "WEB": "When I am afraid, I will put my trust in you.",
+        "RV1909": "En el día que temo, yo en ti confío."
+       },
+       "explain": {
+        "en": "David does not pretend he is never afraid. He says what he does when fear comes: he trusts.",
+        "es": "David no finge que nunca tiene miedo. Dice lo que hace cuando llega el temor: confía."
+       },
+       "context": {
+        "en": "The heading of this psalm ties it to a time when David was seized by his enemies in Gath.",
+        "es": "El título de este salmo lo relaciona con el momento en que David fue apresado por sus enemigos en Gat."
+       },
+       "apply": {
+        "en": "Finish the sentence in your own words: \"When I am afraid, I will...\"",
+        "es": "Completa la frase con tus palabras: \"Cuando tengo miedo, voy a...\""
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 56,
+        "verseStart": 4,
+        "verseEnd": 4
+       },
+       "scene": "scene_meadow_day_01",
+       "text": {
+        "KJV": "In God I will praise his word, in God I have put my trust; I will not fear what flesh can do unto me.",
+        "WEB": "In God, I praise his word. In God, I put my trust. I will not be afraid. What can flesh do to me?",
+        "RV1909": "En Dios alabaré su palabra: en Dios he confiado, no temeré lo que la carne me hiciere."
+       },
+       "explain": {
+        "en": "Trust in God and in what God has said puts human threats in proportion.",
+        "es": "Confiar en Dios y en lo que Dios ha dicho pone en su lugar las amenazas humanas."
+       },
+       "context": {
+        "en": "\"Flesh\" here simply means mortal people, in contrast with God.",
+        "es": "\"La carne\" aquí significa sencillamente personas mortales, en contraste con Dios."
+       },
+       "apply": {
+        "en": "Whose opinion weighs on you most right now? Hold it next to this verse.",
+        "es": "¿La opinión de quién te pesa más ahora? Ponla al lado de este versículo."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 56,
+        "verseStart": 8,
+        "verseEnd": 8
+       },
+       "scene": "scene_night_stars_01",
+       "text": {
+        "KJV": "Thou tellest my wanderings: put thou my tears into thy bottle: are they not in thy book?",
+        "WEB": "You count my wanderings. You put my tears into your container. Aren’t they in your book?",
+        "RV1909": "Mis huídas has tú contado: pon mis lágrimas en tu redoma: ¿no están ellas en tu libro?"
+       },
+       "explain": {
+        "en": "God has noticed every restless step and every tear. None of it is lost.",
+        "es": "Dios ha notado cada paso inquieto y cada lágrima. Nada de eso se pierde."
+       },
+       "context": {
+        "en": "The image of collecting tears in a bottle is a poetic way of saying God keeps a careful record.",
+        "es": "La imagen de guardar lágrimas en una redoma es una forma poética de decir que Dios lleva cuenta cuidadosa."
+       },
+       "apply": {
+        "en": "If something has hurt lately, you can say so honestly in prayer.",
+        "es": "Si algo te ha dolido últimamente, puedes decirlo con honestidad en oración."
+       }
+      },
+      {
+       "type": "missingWord",
+       "ref": {
+        "book": "PSA",
+        "chapter": 56,
+        "verseStart": 3,
+        "verseEnd": 3
+       },
+       "blanks": {
+        "KJV": {
+         "prompt": "What time I am afraid, I will _____ in thee.",
+         "answer": "trust",
+         "options": [
+          "fight",
+          "hide",
+          "run",
+          "trust"
+         ]
+        },
+        "WEB": {
+         "prompt": "When I am afraid, I will put my _____ in you.",
+         "answer": "trust",
+         "options": [
+          "fight",
+          "hide",
+          "run",
+          "trust"
+         ]
+        },
+        "RV1909": {
+         "prompt": "En el día que temo, yo en ti _____.",
+         "answer": "confío",
+         "options": [
+          "callo",
+          "confío",
+          "huyo",
+          "lucho"
+         ]
+        }
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 55,
+        "verseStart": 22,
+        "verseEnd": 22
+       },
+       "scene": "scene_sea_mist_01",
+       "text": {
+        "KJV": "Cast thy burden upon the Lord, and he shall sustain thee: he shall never suffer the righteous to be moved.",
+        "WEB": "Cast your burden on Yahweh and he will sustain you. He will never allow the righteous to be moved.",
+        "RV1909": "Echa sobre Jehová tu carga, y él te sustentará; no dejará para siempre caído al justo."
+       },
+       "explain": {
+        "en": "The psalmist urges the reader to hand over what weighs on them, and says God will hold them up.",
+        "es": "El salmista anima al lector a entregar lo que le pesa, y dice que Dios lo sostendrá."
+       },
+       "context": {
+        "en": "Psalm 55 was written after a close friend's betrayal. This line comes near the end of that pain.",
+        "es": "El Salmo 55 se escribió tras la traición de un amigo cercano. Esta línea llega casi al final de ese dolor."
+       },
+       "apply": {
+        "en": "Write your heaviest burden on paper, then pray it once and put the paper away.",
+        "es": "Escribe en un papel tu carga más pesada, ora por ella una vez y guarda el papel."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 61,
+        "verseStart": 2,
+        "verseEnd": 2
+       },
+       "scene": "scene_rock_high_01",
+       "text": {
+        "KJV": "From the end of the earth will I cry unto thee, when my heart is overwhelmed: lead me to the rock that is higher than I.",
+        "WEB": "From the end of the earth, I will call to you when my heart is overwhelmed. Lead me to the rock that is higher than I.",
+        "RV1909": "Desde el cabo de la tierra clamaré á ti, cuando mi corazón desmayare: á la peña más alta que yo me conduzcas."
+       },
+       "explain": {
+        "en": "From far away and worn out, the psalmist asks to be led to a place more solid than himself.",
+        "es": "Desde lejos y agotado, el salmista pide ser llevado a un lugar más firme que él mismo."
+       },
+       "context": {
+        "en": "A high rock was a natural stronghold, out of reach of floods and attackers.",
+        "es": "Una peña alta era una fortaleza natural, fuera del alcance de inundaciones y atacantes."
+       },
+       "apply": {
+        "en": "Admit one thing that is too big for you. That is where this prayer starts.",
+        "es": "Reconoce una cosa que te queda grande. Ahí empieza esta oración."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 62,
+        "verseStart": 8,
+        "verseEnd": 8
+       },
+       "scene": "scene_meadow_golden_01",
+       "text": {
+        "KJV": "Trust in him at all times; ye people, pour out your heart before him: God is a refuge for us. Selah.",
+        "WEB": "Trust in him at all times, you people. Pour out your heart before him. God is a refuge for us.",
+        "RV1909": "Esperad en él en todo tiempo, oh pueblos; derramad delante de él vuestro corazón: Dios es nuestro amparo. (Selah.)"
+       },
+       "explain": {
+        "en": "Everyone is invited to trust God at all times and to speak to him without holding back.",
+        "es": "Todos son invitados a confiar en Dios en todo tiempo y a hablarle sin guardarse nada."
+       },
+       "context": {
+        "en": "\"Pour out your heart\" pictures emptying a vessel completely, like water.",
+        "es": "\"Derramad vuestro corazón\" describe vaciar por completo una vasija, como agua."
+       },
+       "apply": {
+        "en": "Spend two minutes telling God exactly how today went.",
+        "es": "Dedica dos minutos a contarle a Dios exactamente cómo fue tu día."
+       }
+      },
+      {
+       "type": "choice",
+       "question": {
+        "en": "In Psalm 55:22, what are we told to do with a burden?",
+        "es": "En el Salmo 55:22, ¿qué se nos dice que hagamos con la carga?"
+       },
+       "options": [
+        {
+         "en": "Carry it quietly",
+         "es": "Llevarla en silencio"
+        },
+        {
+         "en": "Ignore it",
+         "es": "Ignorarla"
+        },
+        {
+         "en": "Cast it on the Lord",
+         "es": "Echarla sobre el Señor"
+        }
+       ],
+       "answer": 2,
+       "note": {
+        "en": "The verse adds that he will sustain you.",
+        "es": "El versículo añade que él te sustentará."
+       }
+      }
+     ]
+    },
+    {
+     "day": 5,
+     "title": {
+      "en": "Light in the dark",
+      "es": "Luz en la oscuridad"
+     },
+     "summary": {
+      "en": "Psalms 27 and 139",
+      "es": "Salmos 27 y 139"
+     },
+     "keyCard": 0,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 27,
+        "verseStart": 1,
+        "verseEnd": 1
+       },
+       "scene": "scene_meadow_day_01",
+       "text": {
+        "KJV": "The Lord is my light and my salvation; whom shall I fear? the Lord is the strength of my life; of whom shall I be afraid?",
+        "WEB": "Yahweh is my light and my salvation. Whom shall I fear? Yahweh is the strength of my life. Of whom shall I be afraid?",
+        "RV1909": "Jehová es mi luz y mi salvación: ¿de quién temeré? Jehová es la fortaleza de mi vida: ¿de quién he de atemorizarme?"
+       },
+       "explain": {
+        "en": "With God as his light and safety, David asks who is left to be afraid of.",
+        "es": "Con Dios como su luz y salvación, David pregunta de quién habría de temer."
+       },
+       "context": {
+        "en": "Light in Scripture often stands for guidance, life and God's presence.",
+        "es": "La luz en la Escritura suele representar guía, vida y la presencia de Dios."
+       },
+       "apply": {
+        "en": "Ask yourself gently: what am I afraid of today?",
+        "es": "Pregúntate con calma: ¿de qué tengo miedo hoy?"
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 27,
+        "verseStart": 3,
+        "verseEnd": 3
+       },
+       "scene": "scene_valley_dusk_01",
+       "text": {
+        "KJV": "Though an host should encamp against me, my heart shall not fear: though war should rise against me, in this will I be confident.",
+        "WEB": "Though an army should encamp against me, my heart shall not fear. Though war should rise against me, even then I will be confident.",
+        "RV1909": "Aunque se asiente campo contra mí, no temerá mi corazón: aunque contra mí se levante guerra, yo en esto confío."
+       },
+       "explain": {
+        "en": "Even surrounded by trouble, David says his confidence will hold.",
+        "es": "Aun rodeado de problemas, David dice que su confianza se mantendrá."
+       },
+       "context": {
+        "en": "David spent years pursued by armies. This was not an abstract idea for him.",
+        "es": "David pasó años perseguido por ejércitos. Para él esto no era una idea abstracta."
+       },
+       "apply": {
+        "en": "Confidence here is a choice repeated daily. Make it once today.",
+        "es": "La confianza aquí es una decisión que se repite cada día. Tómala una vez hoy."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 27,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "scene": "scene_rock_high_01",
+       "text": {
+        "KJV": "For in the time of trouble he shall hide me in his pavilion: in the secret of his tabernacle shall he hide me; he shall set me up upon a rock.",
+        "WEB": "For in the day of trouble, he will keep me secretly in his pavilion. In the secret place of his tabernacle, he will hide me. He will lift me up on a rock.",
+        "RV1909": "Porque él me esconderá en su tabernáculo en el día del mal; ocultaráme en lo reservado de su pabellón; pondráme en alto sobre una roca."
+       },
+       "explain": {
+        "en": "In hard times God shelters him and sets him somewhere secure.",
+        "es": "En tiempos difíciles Dios lo resguarda y lo pone en un lugar seguro."
+       },
+       "context": {
+        "en": "The \"pavilion\" or \"tabernacle\" recalls the tent where God's presence was worshiped.",
+        "es": "El \"tabernáculo\" recuerda la tienda donde se adoraba la presencia de Dios."
+       },
+       "apply": {
+        "en": "Picture one safe place. Thank God for it.",
+        "es": "Imagina un lugar seguro. Dale gracias a Dios por él."
+       }
+      },
+      {
+       "type": "choice",
+       "question": {
+        "en": "How does Psalm 27:1 describe the Lord?",
+        "es": "¿Cómo describe el Salmo 27:1 al Señor?"
+       },
+       "options": [
+        {
+         "en": "My light and my salvation",
+         "es": "Mi luz y mi salvación"
+        },
+        {
+         "en": "My shadow",
+         "es": "Mi sombra"
+        },
+        {
+         "en": "My long road",
+         "es": "Mi largo camino"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "It is the first line of the psalm.",
+        "es": "Es la primera línea del salmo."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 27,
+        "verseStart": 13,
+        "verseEnd": 13
+       },
+       "scene": "scene_meadow_path_01",
+       "text": {
+        "KJV": "I had fainted, unless I had believed to see the goodness of the Lord in the land of the living.",
+        "WEB": "I am still confident of this: I will see the goodness of Yahweh in the land of the living.",
+        "RV1909": "Hubiera yo desmayado, si no creyese que tengo de ver la bondad de Jehová en la tierra de los vivientes."
+       },
+       "explain": {
+        "en": "What kept David going was believing he would yet see God's goodness in this life.",
+        "es": "Lo que sostuvo a David fue creer que aún vería la bondad de Dios en esta vida."
+       },
+       "context": {
+        "en": "\"The land of the living\" means here and now, not only the life to come.",
+        "es": "\"La tierra de los vivientes\" significa aquí y ahora, no solo la vida venidera."
+       },
+       "apply": {
+        "en": "Look for one sign of goodness before the day ends.",
+        "es": "Busca una señal de bondad antes de que termine el día."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 27,
+        "verseStart": 14,
+        "verseEnd": 14
+       },
+       "scene": "scene_hills_morning_01",
+       "text": {
+        "KJV": "Wait on the Lord: be of good courage, and he shall strengthen thine heart: wait, I say, on the Lord.",
+        "WEB": "Wait for Yahweh. Be strong, and let your heart take courage. Yes, wait for Yahweh.",
+        "RV1909": "Aguarda á Jehová; esfuérzate, y aliéntese tu corazón: sí, espera á Jehová."
+       },
+       "explain": {
+        "en": "The psalm closes with a call to wait for the Lord with courage.",
+        "es": "El salmo cierra con un llamado a esperar al Señor con valor."
+       },
+       "context": {
+        "en": "In Hebrew, \"wait\" carries the sense of hoping with expectation, not passive delay.",
+        "es": "En hebreo, \"esperar\" tiene el sentido de aguardar con expectativa, no de una demora pasiva."
+       },
+       "apply": {
+        "en": "Is there something you are waiting on? Wait on it with God today.",
+        "es": "¿Hay algo que estás esperando? Espéralo hoy junto a Dios."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 139,
+        "verseStart": 12,
+        "verseEnd": 12
+       },
+       "scene": "scene_night_stars_01",
+       "text": {
+        "KJV": "Yea, the darkness hideth not from thee; but the night shineth as the day: the darkness and the light are both alike to thee.",
+        "WEB": "Even the darkness doesn’t hide from you, but the night shines as the day. The darkness is like light to you.",
+        "RV1909": "Aun las tinieblas no encubren de ti, y la noche resplandece como el día: lo mismo te son las tinieblas que la luz."
+       },
+       "explain": {
+        "en": "Darkness does not hide anything from God. Night and day are alike to him.",
+        "es": "La oscuridad no esconde nada de Dios. Para él la noche y el día son iguales."
+       },
+       "context": {
+        "en": "Psalm 139 is a meditation on how completely God knows and accompanies a person.",
+        "es": "El Salmo 139 es una meditación sobre cuán completamente Dios conoce y acompaña a una persona."
+       },
+       "apply": {
+        "en": "If tonight feels dark, read this verse once more before sleep.",
+        "es": "Si esta noche se siente oscura, lee este versículo una vez más antes de dormir."
+       }
+      },
+      {
+       "type": "missingWord",
+       "ref": {
+        "book": "PSA",
+        "chapter": 27,
+        "verseStart": 1,
+        "verseEnd": 1
+       },
+       "blanks": {
+        "KJV": {
+         "prompt": "The Lord is my _____ and my salvation; whom shall I fear? the Lord is the strength of my life; of whom shall I be afraid?",
+         "answer": "light",
+         "options": [
+          "light",
+          "road",
+          "song",
+          "wall"
+         ]
+        },
+        "WEB": {
+         "prompt": "Yahweh is my _____ and my salvation. Whom shall I fear? Yahweh is the strength of my life. Of whom shall I be afraid?",
+         "answer": "light",
+         "options": [
+          "light",
+          "road",
+          "song",
+          "wall"
+         ]
+        },
+        "RV1909": {
+         "prompt": "Jehová es mi _____ y mi salvación: ¿de quién temeré? Jehová es la fortaleza de mi vida: ¿de quién he de atemorizarme?",
+         "answer": "luz",
+         "options": [
+          "canto",
+          "luz",
+          "muro",
+          "senda"
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "day": 6,
+     "title": {
+      "en": "Near to the brokenhearted",
+      "es": "Cercano a los quebrantados"
+     },
+     "summary": {
+      "en": "Psalms 34, 94, 147",
+      "es": "Salmos 34, 94, 147"
+     },
+     "keyCard": 3,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 34,
+        "verseStart": 4,
+        "verseEnd": 4
+       },
+       "scene": "scene_meadow_day_01",
+       "text": {
+        "KJV": "I sought the Lord, and he heard me, and delivered me from all my fears.",
+        "WEB": "I sought Yahweh, and he answered me, and delivered me from all my fears.",
+        "RV1909": "Busqué á Jehová, y él me oyó, y libróme de todos mis temores."
+       },
+       "explain": {
+        "en": "David looked for God, was answered, and was freed from his fears.",
+        "es": "David buscó a Dios, fue respondido y fue librado de sus temores."
+       },
+       "context": {
+        "en": "The psalm is linked to a narrow escape, when David pretended to be mad to get away from a foreign king.",
+        "es": "El salmo se relaciona con un escape apurado, cuando David se fingió loco para huir de un rey extranjero."
+       },
+       "apply": {
+        "en": "Seeking can be as simple as one honest sentence. Say one.",
+        "es": "Buscar puede ser tan sencillo como una frase honesta. Di una."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 34,
+        "verseStart": 8,
+        "verseEnd": 8
+       },
+       "scene": "scene_table_evening_01",
+       "text": {
+        "KJV": "O taste and see that the Lord is good: blessed is the man that trusteth in him.",
+        "WEB": "Oh taste and see that Yahweh is good. Blessed is the man who takes refuge in him.",
+        "RV1909": "Gustad, y ved que es bueno Jehová: dichoso el hombre que confiará en él."
+       },
+       "explain": {
+        "en": "The reader is invited to experience God's goodness personally, not just hear about it.",
+        "es": "Se invita al lector a experimentar personalmente la bondad de Dios, no solo a oír de ella."
+       },
+       "context": {
+        "en": "\"Taste\" is a deliberately physical word: find out for yourself.",
+        "es": "\"Gustad\" es una palabra intencionalmente física: compruébalo por ti mismo."
+       },
+       "apply": {
+        "en": "Recall one time you saw goodness in a hard season.",
+        "es": "Recuerda una vez en que viste bondad en una época difícil."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 34,
+        "verseStart": 17,
+        "verseEnd": 17
+       },
+       "scene": "scene_valley_dusk_01",
+       "text": {
+        "KJV": "The righteous cry, and the Lord heareth, and delivereth them out of all their troubles.",
+        "WEB": "The righteous cry, and Yahweh hears, and delivers them out of all their troubles.",
+        "RV1909": "Clamaron los justos, y Jehová oyó, y librólos de todas sus angustias."
+       },
+       "explain": {
+        "en": "When God's people cry out, he hears them.",
+        "es": "Cuando el pueblo de Dios clama, él lo oye."
+       },
+       "context": {
+        "en": "The psalm is an acrostic in Hebrew: each verse begins with the next letter of the alphabet.",
+        "es": "El salmo es un acróstico en hebreo: cada versículo empieza con la siguiente letra del alfabeto."
+       },
+       "apply": {
+        "en": "You do not need polished words. A cry counts.",
+        "es": "No necesitas palabras pulidas. Un clamor cuenta."
+       }
+      },
+      {
+       "type": "choice",
+       "question": {
+        "en": "In Psalm 34:8, what are we invited to do?",
+        "es": "En el Salmo 34:8, ¿a qué se nos invita?"
+       },
+       "options": [
+        {
+         "en": "Run and hide",
+         "es": "Correr y esconderse"
+        },
+        {
+         "en": "Taste and see that the Lord is good",
+         "es": "Gustar y ver que el Señor es bueno"
+        },
+        {
+         "en": "Count our mistakes",
+         "es": "Contar nuestros errores"
+        }
+       ],
+       "answer": 1,
+       "note": {
+        "en": "An invitation to find out firsthand.",
+        "es": "Una invitación a comprobarlo de primera mano."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 34,
+        "verseStart": 18,
+        "verseEnd": 18
+       },
+       "scene": "scene_sea_mist_01",
+       "text": {
+        "KJV": "The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.",
+        "WEB": "Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit.",
+        "RV1909": "Cercano está Jehová á los quebrantados de corazón; y salvará á los contritos de espíritu."
+       },
+       "explain": {
+        "en": "God draws close to people whose hearts are broken and whose spirits are crushed.",
+        "es": "Dios se acerca a quienes tienen el corazón quebrantado y el espíritu abatido."
+       },
+       "context": {
+        "en": "Nearness is the point. The verse does not say the pain is small.",
+        "es": "La cercanía es lo central. El versículo no dice que el dolor sea pequeño."
+       },
+       "apply": {
+        "en": "Think of someone who is hurting and send them a kind message.",
+        "es": "Piensa en alguien que está sufriendo y envíale un mensaje amable."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 94,
+        "verseStart": 19,
+        "verseEnd": 19
+       },
+       "scene": "scene_tree_shade_01",
+       "text": {
+        "KJV": "In the multitude of my thoughts within me thy comforts delight my soul.",
+        "WEB": "In the multitude of my thoughts within me, your comforts delight my soul.",
+        "RV1909": "En la multitud de mis pensamientos dentro de mí, tus consolaciones alegraban mi alma."
+       },
+       "explain": {
+        "en": "When anxious thoughts multiply, God's comfort brings the psalmist joy.",
+        "es": "Cuando los pensamientos ansiosos se multiplican, el consuelo de Dios alegra al salmista."
+       },
+       "context": {
+        "en": "Psalm 94 is a prayer about injustice. This verse is a quiet personal moment in the middle of it.",
+        "es": "El Salmo 94 es una oración sobre la injusticia. Este versículo es un momento personal y tranquilo en medio de ella."
+       },
+       "apply": {
+        "en": "List the thoughts crowding your mind, then read this verse over the list.",
+        "es": "Haz una lista de los pensamientos que se te agolpan y luego lee este versículo sobre la lista."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 147,
+        "verseStart": 3,
+        "verseEnd": 3
+       },
+       "scene": "scene_meadow_golden_01",
+       "text": {
+        "KJV": "He healeth the broken in heart, and bindeth up their wounds.",
+        "WEB": "He heals the broken in heart, and binds up their wounds.",
+        "RV1909": "El sana á los quebrantados de corazón, y liga sus heridas."
+       },
+       "explain": {
+        "en": "God is pictured tending wounds, the way someone carefully bandages an injury.",
+        "es": "Se describe a Dios atendiendo heridas, como quien venda con cuidado una lesión."
+       },
+       "context": {
+        "en": "The psalm was likely sung after the exile, when a scattered people were being gathered home.",
+        "es": "El salmo probablemente se cantó tras el exilio, cuando un pueblo disperso era reunido de vuelta a casa."
+       },
+       "apply": {
+        "en": "Healing is often slow. Be patient with yourself today.",
+        "es": "Sanar suele ser lento. Ten paciencia contigo hoy."
+       }
+      },
+      {
+       "type": "missingWord",
+       "ref": {
+        "book": "PSA",
+        "chapter": 34,
+        "verseStart": 18,
+        "verseEnd": 18
+       },
+       "blanks": {
+        "KJV": {
+         "prompt": "The Lord is nigh unto them that are of a _____ heart; and saveth such as be of a contrite spirit.",
+         "answer": "broken",
+         "options": [
+          "broken",
+          "busy",
+          "loud",
+          "proud"
+         ]
+        },
+        "WEB": {
+         "prompt": "Yahweh is near to those who have a _____ heart, and saves those who have a crushed spirit.",
+         "answer": "broken",
+         "options": [
+          "broken",
+          "busy",
+          "loud",
+          "proud"
+         ]
+        },
+        "RV1909": {
+         "prompt": "Cercano está Jehová á los _____ de corazón; y salvará á los contritos de espíritu.",
+         "answer": "quebrantados",
+         "options": [
+          "alegres",
+          "ocupados",
+          "orgullosos",
+          "quebrantados"
+         ]
+        }
+       }
+      }
+     ]
+    },
+    {
+     "day": 7,
+     "title": {
+      "en": "Rest, and morning",
+      "es": "Descanso y mañana"
+     },
+     "summary": {
+      "en": "Psalms 3, 4, 30, 91, 131, 143",
+      "es": "Salmos 3, 4, 30, 91, 131, 143"
+     },
+     "keyCard": 2,
+     "cards": [
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 4,
+        "verseStart": 8,
+        "verseEnd": 8
+       },
+       "scene": "scene_night_stars_01",
+       "text": {
+        "KJV": "I will both lay me down in peace, and sleep: for thou, Lord, only makest me dwell in safety.",
+        "WEB": "In peace I will both lay myself down and sleep, for you, Yahweh alone, make me live in safety.",
+        "RV1909": "En paz me acostaré, y asimismo dormiré; porque solo tú, Jehová, me harás estar confiado."
+       },
+       "explain": {
+        "en": "David can lie down and sleep because his safety rests with God.",
+        "es": "David puede acostarse y dormir porque su seguridad descansa en Dios."
+       },
+       "context": {
+        "en": "Psalm 4 is an evening prayer. It was sung with stringed instruments.",
+        "es": "El Salmo 4 es una oración de la tarde. Se cantaba con instrumentos de cuerda."
+       },
+       "apply": {
+        "en": "Make this your last thought tonight instead of one more scroll.",
+        "es": "Que este sea tu último pensamiento esta noche, en vez de seguir deslizando."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 3,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "scene": "scene_hills_morning_01",
+       "text": {
+        "KJV": "I laid me down and slept; I awaked; for the Lord sustained me.",
+        "WEB": "I laid myself down and slept. I awakened; for Yahweh sustains me.",
+        "RV1909": "Yo me acosté, y dormí, y desperté; porque Jehová me sostuvo."
+       },
+       "explain": {
+        "en": "He slept, and he woke again, because the Lord kept him through the night.",
+        "es": "Durmió y volvió a despertar, porque el Señor lo sostuvo durante la noche."
+       },
+       "context": {
+        "en": "The heading places this psalm when David fled from his son Absalom, one of the worst nights of his life.",
+        "es": "El título sitúa este salmo cuando David huía de su hijo Absalón, una de las peores noches de su vida."
+       },
+       "apply": {
+        "en": "Tomorrow, let \"I woke up\" be your first thank-you.",
+        "es": "Mañana, que \"desperté\" sea tu primer gracias."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 30,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "scene": "scene_city_dawn_01",
+       "text": {
+        "KJV": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.",
+        "WEB": "For his anger is but for a moment. His favor is for a lifetime. Weeping may stay for the night, but joy comes in the morning.",
+        "RV1909": "Porque un momento será su furor; mas en su voluntad está la vida: por la tarde durará el lloro, y á la mañana vendrá la alegría."
+       },
+       "explain": {
+        "en": "Sorrow may stay for a night, but it does not have the last word. Joy arrives with morning.",
+        "es": "El lloro puede quedarse una noche, pero no tiene la última palabra. La alegría llega con la mañana."
+       },
+       "context": {
+        "en": "Weeping is pictured as an overnight guest who leaves at daybreak.",
+        "es": "El lloro se describe como un huésped que pasa la noche y se va al amanecer."
+       },
+       "apply": {
+        "en": "If today was hard, remember that mornings keep coming.",
+        "es": "Si hoy fue difícil, recuerda que las mañanas siguen llegando."
+       }
+      },
+      {
+       "type": "choice",
+       "question": {
+        "en": "What does Psalm 30:5 say comes in the morning?",
+        "es": "¿Qué dice el Salmo 30:5 que viene a la mañana?"
+       },
+       "options": [
+        {
+         "en": "Joy",
+         "es": "Alegría"
+        },
+        {
+         "en": "More weeping",
+         "es": "Más lloro"
+        },
+        {
+         "en": "Silence",
+         "es": "Silencio"
+        }
+       ],
+       "answer": 0,
+       "note": {
+        "en": "Weeping may last a night, but joy comes in the morning.",
+        "es": "El lloro puede durar una noche, pero a la mañana viene la alegría."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 143,
+        "verseStart": 8,
+        "verseEnd": 8
+       },
+       "scene": "scene_meadow_path_01",
+       "text": {
+        "KJV": "Cause me to hear thy lovingkindness in the morning; for in thee do I trust: cause me to know the way wherein I should walk; for I lift up my soul unto thee.",
+        "WEB": "Cause me to hear your loving kindness in the morning, for I trust in you. Cause me to know the way in which I should walk, for I lift up my soul to you.",
+        "RV1909": "Hazme oir por la mañana tu misericordia, porque en ti he confiado: hazme saber el camino por donde ande, porque á ti he alzado mi alma."
+       },
+       "explain": {
+        "en": "A morning prayer: let me hear of your love, and show me which way to walk.",
+        "es": "Una oración de la mañana: hazme oír de tu amor y muéstrame por dónde andar."
+       },
+       "context": {
+        "en": "Psalm 143 is a plea for help by someone who feels worn down and in need of direction.",
+        "es": "El Salmo 143 es un ruego de ayuda de alguien que se siente agotado y necesita dirección."
+       },
+       "apply": {
+        "en": "Pray this verse tomorrow before you check your notifications.",
+        "es": "Ora este versículo mañana antes de revisar tus notificaciones."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 91,
+        "verseStart": 1,
+        "verseEnd": 2
+       },
+       "scene": "scene_tree_shade_01",
+       "text": {
+        "KJV": "He that dwelleth in the secret place of the most High shall abide under the shadow of the Almighty. I will say of the Lord, He is my refuge and my fortress: my God; in him will I trust.",
+        "WEB": "He who dwells in the secret place of the Most High will rest in the shadow of the Almighty. I will say of Yahweh, “He is my refuge and my fortress; my God, in whom I trust.”",
+        "RV1909": "El que habita al abrigo del Altísimo, morará bajo la sombra del Omnipotente. Diré yo á Jehová: Esperanza mía, y castillo mío; mi Dios, en él confiaré."
+       },
+       "explain": {
+        "en": "Whoever makes their home close to God lives under his protection and can call him a refuge.",
+        "es": "Quien hace su hogar cerca de Dios vive bajo su protección y puede llamarlo refugio."
+       },
+       "context": {
+        "en": "\"Shadow\" pictures a traveler resting under a host's roof, or a chick under a wing.",
+        "es": "\"Sombra\" evoca a un viajero descansando bajo el techo de un anfitrión, o un polluelo bajo un ala."
+       },
+       "apply": {
+        "en": "Say verse 2 in the first person, as your own words.",
+        "es": "Di el versículo 2 en primera persona, como palabras tuyas."
+       }
+      },
+      {
+       "type": "verse",
+       "ref": {
+        "book": "PSA",
+        "chapter": 131,
+        "verseStart": 2,
+        "verseEnd": 2
+       },
+       "scene": "scene_meadow_golden_01",
+       "text": {
+        "KJV": "Surely I have behaved and quieted myself, as a child that is weaned of his mother: my soul is even as a weaned child.",
+        "WEB": "Surely I have stilled and quieted my soul, like a weaned child with his mother, like a weaned child is my soul within me.",
+        "RV1909": "En verdad que me he comportado y he acallado mi alma, como un niño destetado de su madre: como un niño destetado está mi alma."
+       },
+       "explain": {
+        "en": "The psalmist has quieted himself, like a contented child resting with its mother.",
+        "es": "El salmista se ha aquietado, como un niño satisfecho que descansa con su madre."
+       },
+       "context": {
+        "en": "One of the shortest psalms. It is about setting aside what is too great to grasp, and resting.",
+        "es": "Uno de los salmos más cortos. Trata de dejar a un lado lo que es demasiado grande para entender, y descansar."
+       },
+       "apply": {
+        "en": "You finished the week. Sit with that quiet for a moment.",
+        "es": "Terminaste la semana. Quédate un momento con esa quietud."
+       }
+      },
+      {
+       "type": "missingWord",
+       "ref": {
+        "book": "PSA",
+        "chapter": 30,
+        "verseStart": 5,
+        "verseEnd": 5
+       },
+       "blanks": {
+        "KJV": {
+         "prompt": "For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the _____.",
+         "answer": "morning",
+         "options": [
+          "evening",
+          "harvest",
+          "morning",
+          "winter"
+         ]
+        },
+        "WEB": {
+         "prompt": "For his anger is but for a moment. His favor is for a lifetime. Weeping may stay for the night, but joy comes in the _____.",
+         "answer": "morning",
+         "options": [
+          "evening",
+          "harvest",
+          "morning",
+          "winter"
+         ]
+        },
+        "RV1909": {
+         "prompt": "Porque un momento será su furor; mas en su voluntad está la vida: por la tarde durará el lloro, y á la _____ vendrá la alegría.",
+         "answer": "mañana",
+         "options": [
+          "cosecha",
+          "mañana",
+          "noche",
+          "sombra"
+         ]
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "life_of_jesus",
+   "asset": "journey_jesus",
+   "terrain": "sea",
+   "seeded": false,
+   "title": {
+    "en": "Life of Jesus",
+    "es": "Vida de Jesús"
+   },
+   "subtitle": {
+    "en": "21 days in the Gospels",
+    "es": "21 días en los Evangelios"
+   },
+   "books": [
+    "MAT",
+    "MRK",
+    "LUK",
+    "JHN"
+   ],
+   "totalDays": 21,
+   "days": []
+  },
+  {
+   "id": "genesis_14",
+   "asset": "journey_genesis",
+   "terrain": "desert",
+   "seeded": false,
+   "title": {
+    "en": "Genesis in 14 Days",
+    "es": "Génesis en 14 días"
+   },
+   "subtitle": {
+    "en": "From the garden to Joseph",
+    "es": "Del huerto a José"
+   },
+   "books": [
+    "GEN"
+   ],
+   "totalDays": 14,
+   "days": []
+  }
+ ]
+}
