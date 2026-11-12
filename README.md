@@ -63,7 +63,7 @@ Explanations and quiz questions in the script are study aids written for this ap
 
 ## Art: every asset that needs final illustration
 
-Every illustration is an `ArtLayer` (or `SheepView`) that looks up an image by name in `Assets.xcassets` and falls back to a painted placeholder. Add an image with the exact name below and it replaces the placeholder with no code change. Style: hand-painted gouache with paper grain, pastel sky in peach, blush and pale aqua, golden rim light. No halo or crown on the sheep.
+Every illustration is an `ArtLayer` (or `SheepView`) that looks up an image by name in `Assets.xcassets` and falls back to a painted placeholder. Add an image with the exact name below and it replaces the placeholder with no code change. Style (direction C, chosen Nov 2026): textured picture-book illustration in gouache and colored pencil, visible paper grain, soft brown pencil outlines, pastel sky in ivory, peach and blush, pale aqua sea, sage meadows, white daisies and coral flowers. The sheep has no halo in everyday states; a thin golden halo appears only in `sheep_celebrating`. Sheep and items are cut out with transparent backgrounds; scenes are full 1536 x 2752 paintings with no characters, leaving the lower center free for the sheep. Painted so far: the 7 sheep states, the 3 items, and `scene_meadow_day_01`, `scene_valley_dusk_01`, `scene_meadow_golden_01`, `scene_meadow_path_01`, `scene_night_stars_01`.
 
 ### Scenes (full-screen backgrounds behind verse cards)
 
