@@ -18,86 +18,10 @@ struct SceneView: View {
             let w = geo.size.width
             let h = geo.size.height
             ZStack {
-                sky
-                    .frame(width: w * 1.2, height: h)
-                    .offset(x: parallax * 6)
-
-                if config.milestones.contains(.rainbow), config.mood != .night {
-                    ArtLayer(name: Art.milestoneRainbow, contentMode: .fit) { RainbowPlaceholder() }
-                        .frame(width: w * 1.1, height: h * 0.5)
-                        .position(x: w * 0.5 + parallax * 10, y: h * 0.42)
-                        .opacity(config.mood == .dusk ? 0.25 : 0.55)
-                }
-
-                clouds(w: w, h: h)
-                    .offset(x: parallax * 14)
-
-                if config.lightLevel > 0 {
-                    ArtLayer(name: Art.lightBeam(config.lightLevel)) {
-                        LightBeamPlaceholder(level: config.lightLevel)
-                    }
-                    .frame(width: w, height: h * 0.85)
-                    .position(x: w * 0.5, y: h * 0.42)
-                    .opacity((pulse ? 1.0 : 0.82) + Double(glow) * 0.3)
-                    .scaleEffect(x: 1 + glow * 0.35, y: 1, anchor: .top)
-                    .blendMode(.softLight)
-                    .allowsHitTesting(false)
-                }
-
-                if config.terrain == .sea || config.terrain == .meadow {
-                    ArtLayer(name: Art.seaMist) { SeaPlaceholder(mood: config.mood) }
-                        .frame(width: w * 1.3, height: h * (config.terrain == .sea ? 0.26 : 0.14))
-                        .position(x: w * 0.5 + parallax * 22, y: h * (config.terrain == .sea ? 0.55 : 0.56))
-                }
-
-                ArtLayer(name: Art.hillsFar) {
-                    HillShape(peaks: config.terrain == .hills || config.terrain == .valley ? 0.55 : 0.25, phase: 0.3)
-                        .fill(groundColors.far)
-                }
-                .frame(width: w * 1.3, height: h * 0.34)
-                .position(x: w * 0.5 + parallax * 30, y: h * (config.terrain == .sea ? 0.74 : 0.66))
-
-                if config.milestones.contains(.floweringTree) {
-                    ArtLayer(name: Art.milestoneFloweringTree, contentMode: .fit) { TreePlaceholder(dim: isDark) }
-                        .frame(width: w * 0.36, height: h * 0.3)
-                        .position(x: w * 0.16 + parallax * 38, y: h * 0.6)
-                }
-
-                ArtLayer(name: Art.ground(config.terrain, config.mood)) {
-                    HillShape(peaks: 0.12, phase: 1.4)
-                        .fill(LinearGradient(colors: [groundColors.near, groundColors.nearDeep], startPoint: .top, endPoint: .bottom))
-                }
-                .frame(width: w * 1.3, height: h * 0.46)
-                .position(x: w * 0.5 + parallax * 44, y: h * 0.8)
-
-                if config.milestones.contains(.stillPond) {
-                    ArtLayer(name: Art.milestoneStillPond, contentMode: .fit) {
-                        Ellipse().fill(LinearGradient(colors: [Brand.Palette.aqua, Brand.Palette.teal.opacity(0.7)], startPoint: .top, endPoint: .bottom))
-                    }
-                    .frame(width: w * 0.42, height: h * 0.05)
-                    .position(x: w * 0.76 + parallax * 44, y: h * 0.78)
-                    .opacity(isDark ? 0.5 : 0.9)
-                }
-
-                ArtLayer(name: Art.wildflowers) {
-                    FlowersPlaceholder(count: config.bloom, sway: drift, dim: isDark, sand: config.terrain == .desert)
-                }
-                .frame(width: w, height: h * 0.4)
-                .position(x: w * 0.5 + parallax * 52, y: h * 0.82)
-
-                if config.bloom > 12, !isDark {
-                    ArtLayer(name: Art.butterflies) { ButterfliesPlaceholder(flutter: drift) }
-                        .frame(width: w, height: h * 0.3)
-                        .position(x: w * 0.5, y: h * 0.62)
-                }
-
-                // A finished full-scene painting (scene_meadow_day_01...) covers the placeholder layers.
                 if Art.exists(config.name) {
-                    Image(config.name)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: w * 1.1, height: h)
-                        .offset(x: parallax * 10)
+                    paintedScene(w: w, h: h)
+                } else {
+                    layeredScene(w: w, h: h)
                 }
 
                 if config.milestones.contains(.goldenEvening), !isDark {
@@ -111,10 +35,12 @@ struct SceneView: View {
                                center: UnitPoint(x: 0.5, y: 0.55), startRadius: 10, endRadius: w * 0.8)
                     .allowsHitTesting(false)
 
-                ArtLayer(name: Art.paperGrain) { PaperGrainPlaceholder() }
-                    .blendMode(.multiply)
-                    .opacity(0.5)
-                    .allowsHitTesting(false)
+                if !Art.exists(config.name) {
+                    ArtLayer(name: Art.paperGrain) { PaperGrainPlaceholder() }
+                        .blendMode(.multiply)
+                        .opacity(0.5)
+                        .allowsHitTesting(false)
+                }
             }
             .frame(width: w, height: h)
             .clipped()
@@ -125,6 +51,132 @@ struct SceneView: View {
             withAnimation(.easeInOut(duration: 9).repeatForever(autoreverses: true)) { drift = true }
             withAnimation(.easeInOut(duration: 5).repeatForever(autoreverses: true)) { pulse = true }
         }
+    }
+
+    /// A finished painting (scene_meadow_day_01...) replaces the placeholder layers.
+    /// The light beam stays on top so the streak still brightens the scene, and
+    /// milestone unlocks show once their own paintings are in the catalog.
+    @ViewBuilder
+    private func paintedScene(w: CGFloat, h: CGFloat) -> some View {
+        Image(config.name)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: w * 1.1, height: h)
+            .offset(x: parallax * 10)
+
+        if config.milestones.contains(.rainbow), config.mood != .night, Art.exists(Art.milestoneRainbow) {
+            Image(Art.milestoneRainbow)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: w * 1.1, height: h * 0.5)
+                .position(x: w * 0.5 + parallax * 10, y: h * 0.32)
+                .opacity(config.mood == .dusk ? 0.25 : 0.6)
+                .blendMode(.softLight)
+        }
+
+        if config.lightLevel > 0 {
+            ArtLayer(name: Art.lightBeam(config.lightLevel)) {
+                LightBeamPlaceholder(level: config.lightLevel)
+            }
+            .frame(width: w, height: h * 0.85)
+            .position(x: w * 0.5, y: h * 0.42)
+            .opacity((pulse ? 0.7 : 0.55) + Double(glow) * 0.3)
+            .scaleEffect(x: 1 + glow * 0.35, y: 1, anchor: .top)
+            .blendMode(.softLight)
+            .allowsHitTesting(false)
+        }
+
+        if config.milestones.contains(.floweringTree), Art.exists(Art.milestoneFloweringTree) {
+            Image(Art.milestoneFloweringTree)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: w * 0.36, height: h * 0.3)
+                .position(x: w * 0.14 + parallax * 38, y: h * 0.6)
+        }
+
+        if config.milestones.contains(.stillPond), Art.exists(Art.milestoneStillPond) {
+            Image(Art.milestoneStillPond)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: w * 0.42, height: h * 0.08)
+                .position(x: w * 0.78 + parallax * 44, y: h * 0.8)
+        }
+    }
+
+    @ViewBuilder
+    private func layeredScene(w: CGFloat, h: CGFloat) -> some View {
+            sky
+                .frame(width: w * 1.2, height: h)
+                .offset(x: parallax * 6)
+
+            if config.milestones.contains(.rainbow), config.mood != .night {
+                ArtLayer(name: Art.milestoneRainbow, contentMode: .fit) { RainbowPlaceholder() }
+                    .frame(width: w * 1.1, height: h * 0.5)
+                    .position(x: w * 0.5 + parallax * 10, y: h * 0.42)
+                    .opacity(config.mood == .dusk ? 0.25 : 0.55)
+            }
+
+            clouds(w: w, h: h)
+                .offset(x: parallax * 14)
+
+            if config.lightLevel > 0 {
+                ArtLayer(name: Art.lightBeam(config.lightLevel)) {
+                    LightBeamPlaceholder(level: config.lightLevel)
+                }
+                .frame(width: w, height: h * 0.85)
+                .position(x: w * 0.5, y: h * 0.42)
+                .opacity((pulse ? 1.0 : 0.82) + Double(glow) * 0.3)
+                .scaleEffect(x: 1 + glow * 0.35, y: 1, anchor: .top)
+                .blendMode(.softLight)
+                .allowsHitTesting(false)
+            }
+
+            if config.terrain == .sea || config.terrain == .meadow {
+                ArtLayer(name: Art.seaMist) { SeaPlaceholder(mood: config.mood) }
+                    .frame(width: w * 1.3, height: h * (config.terrain == .sea ? 0.26 : 0.14))
+                    .position(x: w * 0.5 + parallax * 22, y: h * (config.terrain == .sea ? 0.55 : 0.56))
+            }
+
+            ArtLayer(name: Art.hillsFar) {
+                HillShape(peaks: config.terrain == .hills || config.terrain == .valley ? 0.55 : 0.25, phase: 0.3)
+                    .fill(groundColors.far)
+            }
+            .frame(width: w * 1.3, height: h * 0.34)
+            .position(x: w * 0.5 + parallax * 30, y: h * (config.terrain == .sea ? 0.74 : 0.66))
+
+            if config.milestones.contains(.floweringTree) {
+                ArtLayer(name: Art.milestoneFloweringTree, contentMode: .fit) { TreePlaceholder(dim: isDark) }
+                    .frame(width: w * 0.36, height: h * 0.3)
+                    .position(x: w * 0.16 + parallax * 38, y: h * 0.6)
+            }
+
+            ArtLayer(name: Art.ground(config.terrain, config.mood)) {
+                HillShape(peaks: 0.12, phase: 1.4)
+                    .fill(LinearGradient(colors: [groundColors.near, groundColors.nearDeep], startPoint: .top, endPoint: .bottom))
+            }
+            .frame(width: w * 1.3, height: h * 0.46)
+            .position(x: w * 0.5 + parallax * 44, y: h * 0.8)
+
+            if config.milestones.contains(.stillPond) {
+                ArtLayer(name: Art.milestoneStillPond, contentMode: .fit) {
+                    Ellipse().fill(LinearGradient(colors: [Brand.Palette.aqua, Brand.Palette.teal.opacity(0.7)], startPoint: .top, endPoint: .bottom))
+                }
+                .frame(width: w * 0.42, height: h * 0.05)
+                .position(x: w * 0.76 + parallax * 44, y: h * 0.78)
+                .opacity(isDark ? 0.5 : 0.9)
+            }
+
+            ArtLayer(name: Art.wildflowers) {
+                FlowersPlaceholder(count: config.bloom, sway: drift, dim: isDark, sand: config.terrain == .desert)
+            }
+            .frame(width: w, height: h * 0.4)
+            .position(x: w * 0.5 + parallax * 52, y: h * 0.82)
+
+            if config.bloom > 12, !isDark {
+                ArtLayer(name: Art.butterflies) { ButterfliesPlaceholder(flutter: drift) }
+                    .frame(width: w, height: h * 0.3)
+                    .position(x: w * 0.5, y: h * 0.62)
+            }
     }
 
     private var isDark: Bool { config.mood == .night || config.mood == .dusk }

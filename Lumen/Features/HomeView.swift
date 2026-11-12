@@ -29,6 +29,13 @@ struct HomeView: View {
         case .ready:
             config.mood = isNight ? .night : .day
         }
+        // Each mood has its own painting, so the day meadow never shows at night.
+        switch config.mood {
+        case .night: config.name = "scene_night_stars_01"
+        case .dusk: config.name = "scene_valley_dusk_01"
+        case .golden: config.name = "scene_meadow_golden_01"
+        case .day, .dawn: config.name = "scene_meadow_day_01"
+        }
         return config
     }
 

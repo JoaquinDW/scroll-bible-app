@@ -33,6 +33,28 @@ struct SheepView: View {
     @State private var twitch = false
 
     var body: some View {
+        ZStack(alignment: .bottom) {
+            if Art.exists(state.asset) {
+                // Painted sheep have no ground of their own; a soft shadow sets them on the grass.
+                Ellipse()
+                    .fill(Brand.Palette.brown.opacity(0.16))
+                    .frame(width: size * 0.62, height: size * 0.07)
+                    .blur(radius: size * 0.02)
+                    .offset(y: -size * 0.01)
+            }
+            sheepArt
+                .scaleEffect(x: 1, y: breathe ? 1.025 : 1, anchor: .bottom)
+                .offset(y: hop ? -size * 0.12 : 0)
+        }
+        .frame(width: size, height: size * 0.92)
+        .accessibilityElement()
+        .accessibilityLabel(Text("\(name ?? Copy.sheepGeneric(lang)), \(state.label(lang))"))
+        .accessibilityAddTraits(.isImage)
+        .onAppear { start() }
+        .onChange(of: state) { _, _ in start() }
+    }
+
+    private var sheepArt: some View {
         ArtLayer(name: state.asset, contentMode: .fit) {
             SheepPlaceholder(state: state, twitch: twitch)
                 .frame(width: 120, height: 110)
@@ -40,13 +62,6 @@ struct SheepView: View {
                 .frame(width: size, height: size * 0.92)
         }
         .frame(width: size, height: size * 0.92)
-        .scaleEffect(x: 1, y: breathe ? 1.025 : 1, anchor: .bottom)
-        .offset(y: hop ? -size * 0.12 : 0)
-        .accessibilityElement()
-        .accessibilityLabel(Text("\(name ?? Copy.sheepGeneric(lang)), \(state.label(lang))"))
-        .accessibilityAddTraits(.isImage)
-        .onAppear { start() }
-        .onChange(of: state) { _, _ in start() }
     }
 
     private func start() {
