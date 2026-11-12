@@ -13,6 +13,13 @@ No packages, no backend, no keys. Data is stored locally with SwiftData.
 
 To walk the whole loop quickly, open **Settings > Simulator tools**: *Jump to tomorrow* advances the day so you can build a streak, *Skip a day* misses one so you can see the lost-sheep recovery, *Toggle Premium* opens Focus Mode, and *Reset everything* returns to the welcome screen.
 
+### Running on your own iPhone
+
+1. In Xcode, select the Lumen target, open **Signing & Capabilities** and choose your Team.
+2. If Xcode says the bundle identifier is not available, change it to something of your own (it is `com.joaquindw.lumen` by default).
+
+The Family Controls entitlement is only applied to Simulator builds, so a normal development profile is enough for a device. On a device Focus Mode therefore shows its setup screens but cannot shield apps until you add the Family Controls capability to the target (Signing & Capabilities > + Capability > Family Controls, development only) and point `CODE_SIGN_ENTITLEMENTS` at `Config/Lumen.entitlements` for all SDKs. Shipping it to the App Store needs Apple's approval for the distribution entitlement.
+
 ## What is in the MVP
 
 | Screen | Where |
