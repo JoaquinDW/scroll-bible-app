@@ -18,7 +18,9 @@ To walk the whole loop quickly, open **Settings > Simulator tools**: *Jump to to
 1. In Xcode, select the Lumen target, open **Signing & Capabilities** and choose your Team.
 2. If Xcode says the bundle identifier is not available, change it to something of your own (it is `com.joaquindw.lumen` by default).
 
-The Family Controls entitlement is only applied to Simulator builds, so a normal development profile is enough for a device. On a device Focus Mode therefore shows its setup screens but cannot shield apps until you add the Family Controls capability to the target (Signing & Capabilities > + Capability > Family Controls, development only) and point `CODE_SIGN_ENTITLEMENTS` at `Config/Lumen.entitlements` for all SDKs. Shipping it to the App Store needs Apple's approval for the distribution entitlement.
+Debug builds are signed with the Family Controls (development) entitlement, so Focus Mode can block apps on your iPhone. Xcode's automatic signing adds the capability to your App ID the first time you build. This needs a paid Apple Developer Program team: a free personal team cannot use Family Controls. On a free team, set **Code Signing Entitlements** for Debug back to `[sdk=iphonesimulator*]` only (as Release does); the app runs and Focus Mode explains that blocking is not set up.
+
+Release builds keep the entitlement on the Simulator only until Apple approves the Family Controls (Distribution) entitlement for the App Store. Request it at developer.apple.com/contact/request/family-controls-distribution.
 
 ## What is in the MVP
 

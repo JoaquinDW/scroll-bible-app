@@ -89,6 +89,9 @@ struct FocusSetupView: View {
                     if on {
                         Task {
                             await focus.requestAuthorization()
+                            // If permission could not be granted, switch back off instead of
+                            // leaving a toggle that looks on but blocks nothing.
+                            if !focus.isAuthorized { profile.focusEnabled = false }
                             focus.sync(with: profile)
                         }
                     } else {
@@ -99,31 +102,35 @@ struct FocusSetupView: View {
                 .foregroundStyle(Brand.Palette.petrol)
                 .tint(Brand.Palette.gold)
 
-            if profile.focusEnabled {
-                if focus.isAuthorized {
-                    Button {
-                        showPicker = true
-                    } label: {
-                        Label(focus.selectedCount == 0 ? Copy.focusChoose(lang) : Copy.focusChosen.f(lang, focus.selectedCount),
-                              systemImage: "square.grid.2x2.fill")
-                    }
-                    .buttonStyle(.quiet)
-                    Label(profile.status == .doneToday ? Copy.focusOpen(lang) : Copy.focusLocked(lang),
-                          systemImage: profile.status == .doneToday ? "lock.open.fill" : "lock.fill")
+            if profile.focusEnabled && focus.isAuthorized {
+                Button {
+                    showPicker = true
+                } label: {
+                    Label(focus.selectedCount == 0 ? Copy.focusChoose(lang) : Copy.focusChosen.f(lang, focus.selectedCount),
+                          systemImage: "square.grid.2x2.fill")
+                }
+                .buttonStyle(.quiet)
+                Label(profile.status == .doneToday ? Copy.focusOpen(lang) : Copy.focusLocked(lang),
+                      systemImage: profile.status == .doneToday ? "lock.open.fill" : "lock.fill")
+                    .font(Brand.Fonts.callout)
+                    .foregroundStyle(Brand.Palette.petrolSoft)
+            } else if let failure = focus.lastFailure {
+                HStack(alignment: .top, spacing: 10) {
+                    Image(systemName: "info.circle.fill")
+                        .foregroundStyle(Brand.Palette.teal)
+                    Text(failure.message(lang))
                         .font(Brand.Fonts.callout)
-                        .foregroundStyle(Brand.Palette.petrolSoft)
-                } else {
-                    Text(Copy.focusNeedsPermission(lang))
-                        .font(Brand.Fonts.callout)
-                        .foregroundStyle(Brand.Palette.petrolSoft)
-                    if let error = focus.lastError {
-                        Text(error)
-                            .font(Brand.Fonts.caption)
-                            .foregroundStyle(Brand.Palette.gentle)
-                    }
+                        .foregroundStyle(Brand.Palette.petrol)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .padding(12)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Brand.Palette.cream.opacity(0.8)))
+                if failure == .denied {
                     Button(Copy.focusAllow(lang)) {
                         Task {
                             await focus.requestAuthorization()
+                            if focus.isAuthorized { profile.focusEnabled = true }
                             focus.sync(with: profile)
                         }
                     }

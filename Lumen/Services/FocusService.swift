@@ -16,7 +16,8 @@ final class FocusService {
     static let shared = FocusService()
 
     var isAuthorized = false
-    var lastError: String?
+    /// Why the last authorization attempt failed, in words the user can act on.
+    var lastFailure: FocusFailure?
     var selectedCount = 0
 
     #if canImport(FamilyControls)
@@ -50,10 +51,10 @@ final class FocusService {
         do {
             try await AuthorizationCenter.shared.requestAuthorization(for: .individual)
             isAuthorized = AuthorizationCenter.shared.authorizationStatus == .approved
-            lastError = nil
+            lastFailure = isAuthorized ? nil : .denied
         } catch {
             isAuthorized = false
-            lastError = error.localizedDescription
+            lastFailure = FocusFailure(error)
         }
         #endif
     }
@@ -92,6 +93,54 @@ final class FocusService {
         selectedCount = selection.applicationTokens.count + selection.categoryTokens.count + selection.webDomainTokens.count
     }
     #endif
+}
+
+/// Authorization failures, mapped to messages the user can act on (never the raw system text).
+enum FocusFailure: Equatable {
+    /// The user said no, or closed the Screen Time prompt.
+    case denied
+    /// Screen Time is restricted or managed on this device (parental controls, MDM).
+    case restricted
+    /// This build is not signed with the Family Controls entitlement. Shows up as
+    /// "Couldn't communicate with a helper application" on a device.
+    case notConfigured
+    /// Anything else, including the Simulator, where Screen Time is not available.
+    case unavailable
+
+    init(_ error: Error) {
+        #if targetEnvironment(simulator)
+        self = .unavailable
+        #else
+        #if canImport(FamilyControls)
+        if let familyError = error as? FamilyControlsError {
+            switch familyError {
+            case .authorizationCanceled: self = .denied
+            case .restricted, .invalidAccountType, .authorizationConflict: self = .restricted
+            case .unavailable: self = .unavailable
+            default: self = .notConfigured
+            }
+            return
+        }
+        #endif
+        let ns = error as NSError
+        // NSCocoaErrorDomain 4097/4099: the Screen Time helper refused this app, which in
+        // practice means the Family Controls entitlement is missing from the signed build.
+        if ns.domain == NSCocoaErrorDomain && (ns.code == 4097 || ns.code == 4099) {
+            self = .notConfigured
+        } else {
+            self = .unavailable
+        }
+        #endif
+    }
+
+    var message: LText {
+        switch self {
+        case .denied: return Copy.focusFailDenied
+        case .restricted: return Copy.focusFailRestricted
+        case .notConfigured: return Copy.focusFailNotConfigured
+        case .unavailable: return Copy.focusFailUnavailable
+        }
+    }
 }
 
 /// Presents Apple's app picker when Screen Time APIs are available.
